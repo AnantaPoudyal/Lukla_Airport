@@ -1,0 +1,127 @@
+
+
+    *{text-transform: capitalize;}
+    /* Skill container styling */
+    .skill-container {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #c4cdd5;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Skill title styling */
+    .skill-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Skill list styling */
+    .skill-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Individual skill item styling */
+    .skill-item {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Skill name styling */
+    .skill-name {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
+
+/* Star styling */
+.star {
+    font-size: 20px;
+    color: #ccc;  /* Default empty star color */
+    margin-right: 3px;
+    display: inline-block;
+}
+
+/* Filled stars */
+.star.filled i {
+    color: #FFD700;  /* Gold color for filled stars */
+
+}
+
+/* Half-filled stars */
+.star.half i {
+    color: #FFD700;  /* Gold color for half-filled stars */
+    position: relative;
+    overflow: hidden;
+    width: 50%;  /* Display half of the star */
+}
+
+/* Empty stars */
+.star.empty i {
+    color: #ccc;  /* Gray color for empty stars */
+}
+
+
+
+
+/* ***********HOMEPAGE************** */
+/* Style for the outer container */
+.outer-container {
+    width: 80%;  /* Increased the width for better spacing */
+    margin: 40px auto; /* Added margin for better positioning */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Horizontally align the inner divs */
+    flex-direction: column; /* Stack the inner divs vertically */
+    text-align: center; /* Center the text in the description */
+}
+
+/* Style for the inner photo div */
+.inner-photo {
+    margin-bottom: 20px; /* Space between photo and description */
+}
+
+.photo {
+    width: 250px; /* Set the size of the image */
+    height: 250px;
+    object-fit: cover; /* Make sure the image covers the area */
+    border-radius: 50%; /* Optional: Make the image circular */
+}
+
+/* Style for the inner description div */
+.inner-description {
+    display: block;
+    width: 100%; /* Ensures the description takes up full width */
+    font-size: 1.2rem; /* Adjust the text size */
+}
+
+    /* Container for the marquee */
+    #marquee-container {
+        width: 100%; /* Full width */
+        overflow: hidden; /* Hide overflowing content */
+        white-space: nowrap; /* Prevent line breaks */
+        position: relative; /* For absolute positioning of the text */
+    }
+
+    /* Marquee content that will move */
+    #marquee-content {
+        color:red;
+        display: block;
+        /* position: absolute; */
+        white-space: nowrap;
+        animation: marquee 40s linear infinite; /* Animation for scrolling */
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
